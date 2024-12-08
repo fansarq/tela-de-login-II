@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    
+    --cor-texto:white;
+    --cor-fundo:rgb(0, 0, 0);
+    --cor-btn:rgb(199, 9, 9);
+}
+
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url(backg.jpeg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: auto;
+    color: var(--cor-texto);
+
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    gap: 2rem;
+    
+}
+
+.titulo{
+    padding-top: 30px;
+}
+.forms input{
+    text-align:start;
+    width:300px;
+    border-radius: 8px;
+    padding:5px;
+    outline: none;
+    background-color: rgb(48, 12, 12);
+    color: var(--cor-texto);
+    text-transform: capitalize;
+}
+.forms h4{
+    padding: 10px;
+}
+
+
+.btn-cadastro{
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 150px;
+    background-color: var(--cor-btn);
+    color: var(--cor-texto);
+    animation-duration: 4ms;
+    font-size: medium;
+    cursor: pointer;
+    
+}
+.btn-cadastro:hover{
+    background-color: rgb(197, 51, 51);
+}
+
+.icons{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding-bottom: 1rem;
+        cursor: pointer;
+    }
